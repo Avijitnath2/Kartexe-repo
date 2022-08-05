@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,100;1,200&display=swap"rel="stylesheet">
-    <title>Kartexe</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Kartexe</title>
 </head>
 <body>
-    <div class="container">
-
-        <!--header-->
-        <header id="main_header">
+    <!--header-->
+    <header id="main_header">
+        <div class="container">
             <!--main_logo-->
             <a href="#" id="main_logo"><h1>Kartexe</h1></a>
             <!--github and linkedin links-->
@@ -23,11 +22,13 @@
             <a href="https://github.com/Avijitnath2" target="_blank"><img src="../modules/github_logo.png" alt="github"></a>
             <a href="https://www.linkedin.com/in/avijit-nath-308aa91b7/" target="_blank"><img src="../modules/Linkedin_logo.png" alt="linkedin"></a>
             <!--profile_name works on later-->
-            <p>Username</p>
-        </header>
+            <p>Welcome,<br>Username</p>
+        </div>
+    </header>
 
-        <!--navbar with cart-->
-        <nav>
+    <!--navbar with cart-->
+    <nav>
+        <div class="container">
             <ul>
                 <a href="#">Home</a>
                 <a href="#">Products</a>
@@ -36,20 +37,24 @@
                 <!--this is a cart section work on later-->
                 <a href="#">Cart</a>
             </ul>
-        </nav>
-        
-        <!--main_section-->
-        <main>
+        </div>
+    </nav>
+    
+    <!--main_section-->
+    <main>
+        <div class="container">
             <!--middle_head-->
             <h1 id="middle_head">Kartexe</h1>
             <!--Secondary_head-->
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odit.</p>
             <!--link to product section-->
             <a href="#">See some our products</a>
-        </main>
+        </div>
+    </main>
 
-        <!--Our Products section-->
-        <section>
+    <!--Our Products section-->
+    <section>
+        <div class="container">
             <!--need to add lot of things here !!!!-->
             <a href="#">
                 <div class="product">
@@ -72,12 +77,14 @@
                     <p>Price</p>
                 </div>
             </a>
-        </section>
+        </div>
+    </section>
 
-        <!--About us-->
-        <article id="bookmark">
-            <h1>About US</h1>
-            <section>
+    <!--About us-->
+    <article id="bookmark">
+        <div class="container">
+            <h1>About Me</h1>
+            <section id="details">
                 <!--images needed-->
                 <!--image size here will be shift in css-->
                 <img src="../modules/avijitnath.jpg" alt="Avijit Nath" width="100px" height="auto">
@@ -86,21 +93,22 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti 
                     quaerat sapiente itaque quisquam. Esse a officia reiciendis iure at?</p>
             </section>
-        </article>
-
-        <div>
-            <a href="#main_header">Back to Top</a>
         </div>
+    </article>
 
-        <!--footer-->
-        <footer id =details>
+    <div>
+        <a href="#main_header">Back to Top</a>
+    </div>
+
+    <!--footer-->
+    <footer id =details>
+        <div class="container">
             <h1>Contact Us</h1>
             <!-- for social_media links and emails-->
             <section>
                 <a href="#">emails</a>
-                <a href="#">emails</a>
+                <p>Phone Number</p>
                 <a href="#">github</a>
-                <a href="#">linkedin</a>
                 <a href="#">linkedin</a>
             </section>
             <!--contact us form-->
@@ -116,11 +124,11 @@
                     <input type="submit" value="Submit">
                 </form>
             </section>
-            <div>
-                <p>Copyright &copy; 2022 Kartexe</p>
-            </div>
-        </footer>
+        </div>
+        <div>
+            <p>Copyright &copy; 2022 Kartexe</p>
+        </div>
+    </footer>
 
-    </div>
 </body>
 </html>

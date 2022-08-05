@@ -1,17 +1,30 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     /* font-family: 'Lora', serif;*/
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    font-size: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
     line-height: 1.5;
-    
 }
 .container{
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+/* Main_header */
+/* #main_header{
+    background-color: #333;
+} */
+header img{
+    width: 40px;
+    height: auto;
+}
+header .container{
+    display: flex;
+    height: 100px;
 }
