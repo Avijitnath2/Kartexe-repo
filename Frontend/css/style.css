@@ -30,7 +30,7 @@ header #main_logo{
     color: #212121;
 }
 header #main_logo span{
-    color: #37ad2f;
+    color: #4CAF50;
 }
 header .container{
     display: flex;
@@ -73,6 +73,9 @@ nav{
     color: #000;
     font-size: 20px;
 }
+.for_mobile_nav{
+    display: none;
+}
 
 /* main_section */
 main{
@@ -107,6 +110,7 @@ main a{
     width: 250px;
     text-align: center;
     margin-top: 10px;
+    font-weight: 500;
 }
 main a:hover{
     font-weight: bolder;
@@ -116,18 +120,17 @@ main a:hover{
 /* section_for_products */
 section .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 section img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 section div{
-    padding: 30px;
-    flex-wrap: wrap;
+    padding: 15px;
 }
 section .product{
-    padding: 15px;
+    padding: 10px;
     height: 100%;
     background-color: #f0f0f0;
     color: #212121;
@@ -136,22 +139,19 @@ section .product{
     box-shadow: 1px 1px 3px #333;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
-section p{
-    font-weight: 500;
-    /* justify-self: end; */
+.div_section{
+    width: 33%;
 }
 
 section .product:hover{
     box-shadow: 1px 1px 2px #555;
 }
-section h1{
-    width: 300px;
-}
 section p{
     font-size: 18px;
+    font-weight: 500;
 }
 
 /* About Me Section */
@@ -182,12 +182,8 @@ article div section .sub_intro{
 }
 article div section .sub_intro h1{
     font-size: 25px; 
-    margin: 5px 0;
+    /* margin: 5px 0; */
 }
-article div section .sub_intro p{
-    margin: 5px 0;
-}
-
 /* Back to Top */
 /* #btt{
     text-align: center;
@@ -273,6 +269,18 @@ footer div .split_column #form_section input[type=submit]:hover{
     background-color: #cfcfcf;
     font-weight: 500;
 }
+input,textarea {
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+    outline: none;
+}
+input:focus,textarea:focus{
+    font-weight: 500;
+    border: 3px solid #555;
+}
+
 
 /* end footer */
 #end_footer{
@@ -282,7 +290,7 @@ footer div .split_column #form_section input[type=submit]:hover{
     padding: 10px;
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
     /* header */
     .container{
         width: 90%;
@@ -310,6 +318,13 @@ footer div .split_column #form_section input[type=submit]:hover{
     section .product{
         margin: 10px 0;
     }
+    .div_section {
+        width: 400px;
+    }
+    section img {
+        width: 250px;
+        height: 250px;
+    }
 
     /* about */
 
@@ -322,20 +337,104 @@ footer div .split_column #form_section input[type=submit]:hover{
     footer div .split_column {
         flex-direction: column;
     }
-
     footer div .split_column #form_section {
         width: 100%;
     }
 }
-@media(max-width:500px){
+@media(max-width:600px){
     header .container{
         flex-direction: column;
     }
+
+    #navbar{
+        display: none;
+    }
+    .for_mobile_nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .container2{
+        width: 100%;
+        margin: auto;
+        background-color: #f9f9f9;
+        position: sticky;
+        top: 0;
+        box-shadow: 1px 1px 4px #333;
+    }
+    .for_mobile_nav{
+        display: flex;
+        height: 100px;
+    }
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 40px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+    }
+    #cart_right {
+        margin-right: 40px;
+    }
+    #cart_right{
+        color: #333;
+        padding: 16px;
+        box-shadow: 0 0 2px #555;
+        background-color: #f4f4f4;
+    }
+    #cart_right:hover{
+        background-color: #f0f0f0;
+        box-shadow: 0 0 3px #333;
+    }
+
     article div #details{
         flex-direction: column;
     }
     article img{
         margin: 0;
         margin-top: 5px;
+    }
+
+}
+@media (max-width: 350px) {
+    .div_section {
+        width: 300px;
+    }
+    article div section .sub_intro h1 {
+        margin: 5px 0;
     }
 }
