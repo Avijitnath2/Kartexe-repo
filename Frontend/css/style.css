@@ -197,7 +197,7 @@ article div section .sub_intro h1{
 .btt {
     background-color: #dfdfdf;
     padding: 15px 0;
-    box-shadow: 0px 0px 3px #333;
+    box-shadow: 0px 0px 4px #333;
     text-align: center;
 }
 .btt a{
@@ -289,6 +289,55 @@ input:focus,textarea:focus{
     font-weight: 500;
     padding: 10px;
 }
+
+/* ---------Product page---------- */
+
+.design_product{
+    box-shadow: 0 0 4px #333;
+    margin: 15px; 
+    padding: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+}
+.design_product img{
+    width: 180px;
+    height: 180px;
+}
+.details_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.price_product h2{
+    padding: 25px;
+}
+.price_product{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+/* ------Cart Page------ */
+.cart_page{
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0 0 3px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart_page a{
+    color: #4CAF50;
+    margin-top: 5px;
+}
+.cart_page img{
+    width: 100px;
+    height: 100px;
+}
+
 
 @media(max-width:900px){
     /* header */
